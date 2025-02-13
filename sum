@@ -1,0 +1,35 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        int value=123456;
+        int sum=0;
+            while (val>0)
+        {
+            int digit=val%10;
+            val=val/10;
+            if (digit%2==1)
+            {
+                oddsum=oddsum+digit;
+        }else{
+        evensum=evensum+digit;
+       }if(checkprimedigit)
+        {
+        System.out.println("oddsum" +oddsum+"\tevensum"+evensum+"\tprimenumber");
+        }
+         static boolean checkprime(int val)
+       {
+           int count=0;
+           for (int i=1;i>=6;i++);
+           if (val%1==0){
+           count++;
+       }
+       if(count==2){
+       
+       
+        
+        System.out.println("sum=");
+    }
+}
+}
