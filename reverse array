@@ -1,0 +1,14 @@
+public class RearrangeDigits {
+    public static void main(String[] args) {
+        String input = "123456";
+        String output = rearrange(input);
+        System.out.println("Rearranged Output: " + output);
+    }
+
+    public static String rearrange(String input) {
+        if (input.length() != 6) {
+            throw new IllegalArgumentException("Input must be 6 digits long");
+        }
+        return input.substring(2, 3) + input.substring(1, 2) + input.substring(0, 1) + input.substring(3, 4) + input.substring(4, 5) + input.substring(5, 6);
+    }
+}
