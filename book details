@@ -1,0 +1,23 @@
+
+public class Book {  
+    private String title;
+    private String author;
+    private double price;
+public Book (String title,String author,double price)
+{
+    this.title=title;
+    this.author=author;
+    this.price=price;
+}
+public void displayDetails(){
+    System.out.println("title:"+title);
+    System.out.println("author:"+author);
+    System.out.println("price:"+price);
+    
+}
+public static void main(String[] args){
+    Book book =new Book ("java programming","yadhav",100.0);
+    book.displayDetails();
+}
+}
+   
