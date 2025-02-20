@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter student details:");
+        System.out.print("ID: ");
+        String sid = scanner.nextLine();
+        System.out.print("Name: ");
+        String sname = scanner.nextLine();
+        System.out.print("Register No: ");
+        String sregno = scanner.nextLine();
+        System.out.println("Student details entered:");
+        System.out.println("ID: " + sid);
+        System.out.println("Name: " + sname);
+        System.out.println("Register No: " + sregno);
+        scanner .close();
+    }
+}
