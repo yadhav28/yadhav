@@ -1,0 +1,84 @@
+public class Main {
+    public static void main(String[] args) {
+class Shape {
+    public void area() {
+        System.out.println("Calculating area for shape");
+    }
+}
+
+class Rectangle extends Shape {
+    private int length;
+    private double width;
+
+    public Rectangle(int length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public void area() {
+        double area = length * width;
+        System.out.println("Area of Rectangle: " + area);
+    }
+}
+
+class Square extends Shape {
+    private int length;
+
+    public Square(int length) {
+        this.length = length;
+    }
+
+    @Override
+    public void area() {
+        double area = length * length;
+        System.out.println("Area of Square: " + area);
+    }
+}
+
+class Circle extends Shape {
+    private double radius;
+    private final double pi = 3.14;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public void area() {
+        double area = pi * radius * radius;
+        System.out.println("Area of Circle: " + area);
+    }
+}
+class Triangle extends Shape {
+    private double length;
+    private double breadth;
+    private final double p = 0.5;
+
+    public Triangle(double length,double breadth) {
+        this.length = length;
+        this.breadth=breadth;
+    }
+
+    @Override
+    public void area() {
+        double area = p * length * breadth;
+        System.out.println("Area of Triangle: " + area);
+    }
+}
+
+
+        Square s = new Square(12);
+        s.area();
+
+        Rectangle r = new Rectangle(12, 0.13);
+        r.area();
+
+        Circle c = new Circle(3);
+        c.area();
+        
+        Triangle t = new Triangle(12.0,13.0);
+        t.area();
+
+    }
+}
